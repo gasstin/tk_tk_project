@@ -86,6 +86,8 @@
               'Thanks for logging in, ' + response.name + '!';
           });
         }
+        document.getElementById('status').innerHTML = 'You are now logged in.';
+
       </script>
       
       <!--
@@ -94,7 +96,7 @@
         the FB.login() function when clicked.
       -->
       
-      <fb:login-button scope="public_profile,email,instagram_basic,pages_show_list." onlogin="checkLoginState();">
+      <fb:login-button scope="public_profile,email,instagram_basic,pages_show_list" onlogin="checkLoginState();">
       </fb:login-button>
       
       <div id="status">
